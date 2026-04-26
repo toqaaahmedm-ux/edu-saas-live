@@ -1,0 +1,30 @@
+@import "tailwindcss";
+/* تحسينان كامله للموقع بتاعي  */
+:root {
+  --font-sans: "Inter", ui-sans-serif, system-ui;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f8fafc; /* تعادل slate-50 */
+  color: #0f172a; /* تعادل slate-900 */
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: -0.02em;
+  font-weight: 900;
+}
+
+/* أنيميشن جميل ظهور  كل الصفحات */
+.page-transition {
+  animation: fadeIn 0.7s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
